@@ -5,8 +5,10 @@
 
 <h3> this project is nothing but a singup and signin page</h3>
 
-note that : index.js is a main file 
+<ul>
+  note that : index.js is a main file 
 
+</ul>
 <p>in this code i used signup.controllers.js and signup.models.js for developing signup and signin page</p>
  for developing this  project i used following technologies 
  <ul>
