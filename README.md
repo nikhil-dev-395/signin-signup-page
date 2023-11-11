@@ -3,7 +3,7 @@
 <i>developed by : nikhil wankhade </i>
 
 
-<h3> this project is nothing but singup and sign page</h3>
+<h3> this project is nothing but a singup and signin page</h3>
 
 
 
