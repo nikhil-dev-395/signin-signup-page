@@ -2,9 +2,12 @@
 
 <i>developed by : nikhil wankhade </i>
 
-<h3> this project is nothing but singup and sign page</h3>
-<p>in this code i used signup.controllers.js and signup.models.js for developing signup and signin page</p>
 
+<h3> this project is nothing but singup and sign page</h3>
+
+
+
+<p>in this code i used signup.controllers.js and signup.models.js for developing signup and signin page</p>
  for developing this  project i used following technologies 
  <ul>
    <li>
@@ -17,3 +20,10 @@
      node js  : run time enviroment
    </li>
  </ul>
+
+##for running this code you should have node js in your local system and for  running this code follow following instruction
+1. first install node js
+2. create  a folder or choose folder where you want this code
+3. now clone this project by git 
+4. after cloning write `npm i` in terminal, this npm command will install dependencies for project
+5. at last write `npm start` in terminal and start code and after starting check it by postman application
