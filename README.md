@@ -21,7 +21,7 @@
    </li>
  </ul>
 
-##for running this code you should have node js in your local system and for  running this code follow following instruction
+<b>for running this code you should have node js in your local system and for  running this code follow following instruction</b>
 1. first install node js
 2. create  a folder or choose folder where you want this code
 3. now clone this project by git 
