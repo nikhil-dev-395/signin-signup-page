@@ -2,19 +2,15 @@ import singUp_Model from "../models/singUp.models.js";
 
 const singUpUser = async (req, resp) => {
   let userData = await singUp_Model(req.body);
-  let result = await userData
+  await userData
     .save()
     .then((data) => {
       resp.status(200).send(data);
-      console.log(
-        "data saved ~~~",
-        data
-      ); /* remember to cut this console.log because this code help to show created data in terminal */
+      console.log("sign up successful");
     })
     .catch((error) => {
       console.log("error occurred at sign up ~~~~~", error);
     });
-  // console.log(result);
 };
 
 const singInUser = async (req, resp) => {
