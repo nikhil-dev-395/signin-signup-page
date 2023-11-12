@@ -2,13 +2,17 @@ import singUp_Model from "../models/singUp.models.js";
 
 const singUpUser = async (req, resp) => {
   let userData = await singUp_Model(req.body);
-  let result = await userData.save();
-  if (result) {
-    resp.send(result);
-    resp.status(201).json({ message: "success" });
-  } else {
-    return resp.status(404).json({ message: "error occurred " });
-  }
+  let result = await userData
+    .save()
+    .then((data) => {
+      resp.status(200);
+      resp.send(data);
+      console.log("data saved ~~~", data); //! remember to cut this console.log
+    })
+    .catch((error) => {
+      console.log("error occurred at sign up ~~~~~", error);
+    });
+  console.log(result);
 };
 
 const singInUser = async (req, resp) => {
