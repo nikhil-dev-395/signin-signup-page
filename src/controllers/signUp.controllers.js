@@ -15,20 +15,13 @@ const singUpUser = async (req, resp) => {
 
 const singInUser = async (req, resp) => {
   try {
-    const { name, password } = req.body;
     let userData = await singUp_Model.findOne(req.body);
     if (!userData) {
       resp.status(404).send("user not available");
     }
     resp.send(userData);
-
-    if (userData.password === password) {
-      console.log({ message: "sign in successful " });
-    } else {
-      console.log({ message: "wrong password or username" });
-    }
   } catch (error) {
-    console.log("error occurred at signing a user ~~~>", error);
+    console.log("error occurred at signing a user ~~~>", error.message);
     resp.json({ message: "error occurred at signing " });
     process.exit(1);
   }
