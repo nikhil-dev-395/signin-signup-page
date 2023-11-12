@@ -5,14 +5,16 @@ const singUpUser = async (req, resp) => {
   let result = await userData
     .save()
     .then((data) => {
-      resp.status(200);
-      resp.send(data);
-      console.log("data saved ~~~", data); //! remember to cut this console.log
+      resp.status(200).send(data);
+      console.log(
+        "data saved ~~~",
+        data
+      ); /* remember to cut this console.log because this code help to show created data in terminal */
     })
     .catch((error) => {
       console.log("error occurred at sign up ~~~~~", error);
     });
-  console.log(result);
+  // console.log(result);
 };
 
 const singInUser = async (req, resp) => {
