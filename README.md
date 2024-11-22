@@ -26,3 +26,6 @@
 3. now clone this project by git 
 4. after cloning write `npm i` in terminal, this npm command will install dependencies for project
 5. at last write `npm start` in terminal and start code and after starting check it by postman application
+```plaintext
+please dont forgot to folow and start my repo 😊
+``
